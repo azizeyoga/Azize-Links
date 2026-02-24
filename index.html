@@ -1,94 +1,118 @@
 <!DOCTYPE html>
 <html lang="bg">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Йога с Азизе</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Йога с Азизе</title>
 
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      background: #f4f4f4;
-      display: flex;
-      justify-content: center;
-      overflow-x: hidden;
-    }
+<style>
+* {
+  box-sizing: border-box;
+}
 
-    .container {
-      width: 100%;
-      max-width: 420px;
-      background: white;
-      border-radius: 24px;
-      padding: 30px 20px 40px;
-      box-sizing: border-box;
-      text-align: center;
-      margin: 20px;
-    }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: #efefef;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+}
 
-    .profile-img {
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
-      border: 6px solid #7a9978;
-      object-fit: cover;
-      margin-bottom: 20px;
-    }
+.container {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 40px 20px;
+  margin: 20px;
+  text-align: center;
+}
 
-    h1 {
-      margin: 10px 0 5px;
-      font-size: 28px;
-    }
+/* КРЪГ */
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 8px solid #7a9978;
+  margin: 0 auto 25px auto;
+}
 
-    .subtitle {
-      color: #666;
-      margin-bottom: 5px;
-    }
+/* Ако ползваш снимка вместо празен кръг,
+   замени div.circle със снимка и използвай този клас
 
-    .description {
-      color: #888;
-      font-size: 14px;
-      margin-bottom: 30px;
-    }
+.profile-img {
+  display: block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 8px solid #7a9978;
+  object-fit: cover;
+  margin: 0 auto 25px auto;
+}
+*/
 
-    .btn {
-      display: block;
-      width: 100%;
-      padding: 16px;
-      margin-bottom: 16px;
-      background: #7a9978;
-      color: white;
-      text-decoration: none;
-      border-radius: 30px;
-      font-weight: bold;
-      transition: 0.2s;
-    }
+h1 {
+  margin: 10px 0 5px;
+  font-size: 28px;
+}
 
-    .btn:hover {
-      opacity: 0.9;
-    }
-  </style>
+.subtitle {
+  color: #666;
+  margin-bottom: 6px;
+}
+
+.description {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 30px;
+  line-height: 1.4;
+}
+
+.btn {
+  display: block;
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 16px;
+  background: #7a9978;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+</style>
 </head>
 
 <body>
-  <div class="container">
 
-    <img src="YOUR_IMAGE_LINK_HERE" class="profile-img">
+<div class="container">
 
-    <h1>Йога с Азизе</h1>
-    <div class="subtitle">Hatha · Yin · Soundbath</div>
-    <div class="description">
-      място, където тялото почива,<br>
-      а душата се събужда
-    </div>
+  <div class="circle"></div>
 
-    <a href="#" class="btn">Facebook страница</a>
-    <a href="#" class="btn">Instagram страница</a>
-    <a href="#" class="btn">Viber канал</a>
-    <a href="#" class="btn">График Maxifit</a>
-    <a href="#" class="btn">График Flow Soul space</a>
+  <!-- Ако искаш снимка вместо празен кръг:
+  <img src="ТУК_ЛИНК_КЪМ_СНИМКА" class="profile-img">
+  -->
 
+  <h1>Йога с Азизе</h1>
+  <div class="subtitle">Hatha · Yin · Soundbath</div>
+  <div class="description">
+    място, където тялото почива,<br>
+    а душата се събужда
   </div>
+
+  <a href="#" class="btn">Facebook страница</a>
+  <a href="#" class="btn">Instagram страница</a>
+  <a href="#" class="btn">Viber канал</a>
+  <a href="#" class="btn">График Maxifit</a>
+  <a href="#" class="btn">График Flow Soul space</a>
+
+</div>
+
 </body>
 </html>
