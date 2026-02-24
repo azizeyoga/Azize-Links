@@ -1,109 +1,87 @@
 <!DOCTYPE html>
 <html lang="bg">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Йога с Азизе</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Йога с Азизе</title>
 
-<style>
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f5f5f5;
-}
-
-.container {
-  max-width: 400px;
-  margin: 40px auto;
-  background: white;
-  padding: 30px 20px 40px 20px;
-  border-radius: 25px;
-  text-align: center;
-}
-
-/* СНИМКА */
-.profile-img {
-  display: block;
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 8px solid #7a9978;
-  object-fit: cover;
-  margin: 0 auto 25px auto;
-}
-
-/* АКО НЯМА СНИМКА */
-.circle {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  border: 8px solid #7a9978;
-  margin: 0 auto 25px auto;
-}
-
-h1 {
-  margin: 10px 0 5px;
-  font-size: 28px;
-}
-
-.subtitle {
-  color: #666;
-  margin-bottom: 6px;
-}
-
-.description {
-  color: #888;
-  font-size: 14px;
-  margin-bottom: 30px;
-  line-height: 1.4;
-}
-
-.btn {
-  display: block;
-  width: 100%;
-  padding: 16px;
-  margin-bottom: 16px;
-  background: #7a9978;
-  color: white;
-  text-decoration: none;
-  border-radius: 30px;
-  font-weight: bold;
-}
-
-.btn:active {
-  transform: scale(0.98);
-}
-</style>
+  <style>
+    body{
+      margin:0;
+      font-family: Arial, sans-serif;
+      background:#f4f4f4;
+    }
+    .container{
+      width:100%;
+      max-width:520px;
+      margin:0 auto;
+      background:#ffffff;
+      padding:40px 20px;
+      text-align:center;
+    }
+    img{
+      width:160px;
+      height:160px;
+      object-fit:cover;
+      border-radius:50%;
+      border:4px solid #7a9978;
+      margin-bottom:18px;
+    }
+    h1{
+      font-size:26px;
+      margin:10px 0 6px;
+      color:#333333;
+    }
+    .subtitle{
+      font-size:16px;
+      color:#666666;
+      margin-bottom:10px;
+    }
+    .tagline{
+      font-size:15px;
+      color:#777777;
+      margin-bottom:28px;
+      line-height:1.35;
+    }
+    .button{
+      display:block;
+      width:100%;
+      padding:15px 16px;
+      margin:12px 0;
+      background:#7a9978;
+      color:#ffffff;
+      text-decoration:none;
+      border-radius:35px;
+      font-weight:bold;
+      transition:0.2s;
+      box-sizing:border-box;
+    }
+    .button:hover{ opacity:0.88; }
+  </style>
 </head>
 
 <body>
+  <div class="container">
 
-<div class="container">
+    <img src="azize-profile.png" alt="Йога с Азизе" />
 
-  <!-- Ако имаш снимка – сложи линк тук -->
-  <!-- <img src="PASTE_IMAGE_URL_HERE" class="profile-img"> -->
+    <h1>Йога с Азизе</h1>
+    <div class="subtitle">Hatha · Yin · Soundbath</div>
+    <div class="tagline">
+      място, където тялото почива,<br>
+      а душата се събужда
+    </div>
 
-  <!-- Ако нямаш снимка – остави този кръг -->
-  <div class="circle"></div>
+    <a class="button" href="https://www.facebook.com/share/17JUXpwfdC/" target="_blank" rel="noopener">Facebook страница</a>
 
-  <h1>Йога с Азизе</h1>
-  <div class="subtitle">Hatha · Yin · Soundbath</div>
-  <div class="description">
-    място, където тялото почива,<br>
-    а душата се събужда
+    <a class="button" href="https://www.instagram.com/yoga.azize?igsh=MXg4MTE4cTR4eXlwbg==" target="_blank" rel="noopener">Instagram страница</a>
+
+    <a class="button" href="https://invite.viber.com/?g2=AQAFdclileRBfVW7%2FZ9wPyFaTdt%2BKzZdpDyQVsvCp0yamUv6HptSyb%2BxeD4LqFAF" target="_blank" rel="noopener">Viber канал</a>
+
+    <a class="button" href="grafik-maxifit.png" target="_blank" rel="noopener">График Maxifit</a>
+
+    <a class="button" href="grafik-slowflow.png" target="_blank" rel="noopener">График Flow Soul space</a>
+
   </div>
-
-  <a href="ТУК_FACEBOOK_ЛИНК" class="btn" target="_blank">Facebook страница</a>
-  <a href="ТУК_INSTAGRAM_ЛИНК" class="btn" target="_blank">Instagram страница</a>
-  <a href="ТУК_VIBER_ЛИНК" class="btn" target="_blank">Viber канал</a>
-  <a href="ТУК_MAXIFIT_ЛИНК" class="btn" target="_blank">График Maxifit</a>
-  <a href="ТУК_SOULFLOW_ЛИНК" class="btn" target="_blank">График Flow Soul space</a>
-
-</div>
-
 </body>
 </html>
