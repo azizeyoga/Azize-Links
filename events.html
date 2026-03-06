@@ -8,7 +8,6 @@
 <title>Събития | Йога с Азизе</title>
 
 <style>
-
 *{
 box-sizing:border-box;
 }
@@ -136,14 +135,12 @@ border-radius:20px;
 .soon h3{
 margin-top:0;
 }
-
 </style>
 </head>
 
 <body>
 
 <div class="page">
-
 <div class="card">
 
 <h1>Събития</h1>
@@ -151,7 +148,6 @@ margin-top:0;
 <div class="intro">
 Тук ще откриваш актуалните събития и специални практики на Йога с Азизе.
 </div>
-
 
 <div class="section-label">
 АКТУАЛНО СЪБИТИЕ
@@ -189,14 +185,13 @@ margin-top:0;
 Запиши се
 </a>
 
-<a class="button secondary" href="https://maps.app.goo.gl/9Yp45ybEqNxVxsiy8">
+<a class="button secondary" href="https://maps.app.goo.gl/9Yp45ybEqNxVxsiy8" target="_blank">
 Виж локацията
 </a>
 
 <div class="description">
 Практика за освобождаване на напрежението в раменете, врата и горната част на гърба чрез комбинация от миофасциално освобождаване и Yin йога.
 </div>
-
 
 <div class="section-label">
 СЛЕДВАЩО СЪБИТИЕ
@@ -226,13 +221,9 @@ margin-top:0;
 Скоро
 </div>
 
-
 <div class="soon">
-
 <h3>Очаквайте скоро</h3>
-
 Следващи специални практики и събития ще бъдат публикувани тук.
-
 </div>
 
 <a class="button secondary" href="index.html">
@@ -240,34 +231,31 @@ margin-top:0;
 </a>
 
 </div>
-
 </div>
 
-
 <script>
+const eventDate = new Date("2026-03-21T12:30:00+02:00").getTime();
+const countdownEl = document.getElementById("countdown");
 
-const eventDate = new Date("March 21, 2026 12:30:00").getTime();
+function updateCountdown() {
+  const now = new Date().getTime();
+  const distance = eventDate - now;
 
-const countdown = setInterval(function() {
+  if (distance <= 0) {
+    countdownEl.innerHTML = "Събитието започва!";
+    return;
+  }
 
-const now = new Date().getTime();
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 
-const distance = eventDate - now;
-
-const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-
-document.getElementById("countdown").innerHTML =
-"До събитието остават: " + days + " дни " + hours + " часа " + minutes + " мин.";
-
-if (distance < 0) {
-clearInterval(countdown);
-document.getElementById("countdown").innerHTML = "Събитието започва!";
+  countdownEl.innerHTML =
+    "До събитието остават: " + days + " дни " + hours + " часа " + minutes + " мин.";
 }
 
-}, 60000);
-
+updateCountdown();
+setInterval(updateCountdown, 60000);
 </script>
 
 </body>
