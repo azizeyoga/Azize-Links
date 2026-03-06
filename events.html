@@ -1,190 +1,169 @@
 <!DOCTYPE html>
 <html lang="bg">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Събития | Йога с Азизе</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    * { box-sizing: border-box; }
+<title>Събития | Йога с Азизе</title>
 
-    body{
-      margin:0;
-      font-family:Arial, sans-serif;
-      background:linear-gradient(180deg,#e7eee4 0%,#dfe7da 100%);
-      color:#2f2f2f;
-    }
+<style>
 
-    .page{
-      min-height:100vh;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      padding:14px;
-    }
+*{
+box-sizing:border-box;
+}
 
-    .card{
-      width:100%;
-      max-width:560px;
-      background:#f8faf7;
-      border-radius:34px;
-      padding:24px 20px 22px;
-      text-align:center;
-      box-shadow:0 20px 50px rgba(80,100,70,0.15);
-    }
+body{
+margin:0;
+font-family:Arial, sans-serif;
+background:linear-gradient(180deg,#e7eee4 0%,#dfe7da 100%);
+color:#2f2f2f;
+}
 
-    h1{
-      margin:0 0 10px;
-      font-size:28px;
-      font-weight:700;
-      color:#2f332f;
-    }
+.page{
+min-height:100vh;
+display:flex;
+justify-content:center;
+padding:20px;
+}
 
-    .intro{
-      margin:0 0 20px;
-      font-size:15px;
-      line-height:1.45;
-      color:#6c7469;
-    }
+.card{
+width:100%;
+max-width:560px;
+background:#f8faf7;
+border-radius:34px;
+overflow:hidden;
+box-shadow:0 20px 50px rgba(80,100,70,0.15);
+}
 
-    .event-box{
-      background:#ffffff;
-      border-radius:26px;
-      padding:20px 16px;
-      margin-bottom:18px;
-      box-shadow:0 10px 25px rgba(80,100,70,0.08);
-      text-align:left;
-    }
+.hero img{
+width:100%;
+display:block;
+}
 
-    .event-label{
-      font-size:12px;
-      font-weight:700;
-      letter-spacing:0.08em;
-      text-transform:uppercase;
-      color:#8aa184;
-      margin-bottom:10px;
-      text-align:center;
-    }
+.content{
+padding:26px 22px 28px;
+text-align:center;
+}
 
-    .event-title{
-      font-size:24px;
-      font-weight:700;
-      line-height:1.2;
-      color:#2f332f;
-      text-align:center;
-      margin-bottom:8px;
-    }
+h1{
+margin:0 0 6px;
+font-size:28px;
+}
 
-    .event-subtitle{
-      font-size:15px;
-      color:#5f675d;
-      text-align:center;
-      margin-bottom:16px;
-    }
+.subtitle{
+font-size:16px;
+color:#5f675d;
+margin-bottom:18px;
+}
 
-    .event-details{
-      font-size:15px;
-      line-height:1.6;
-      color:#4f564d;
-      margin-bottom:14px;
-    }
+.date{
+font-size:18px;
+font-weight:bold;
+margin-bottom:6px;
+}
 
-    .event-description{
-      font-size:14px;
-      line-height:1.5;
-      color:#6e756c;
-      margin-bottom:18px;
-    }
+.time{
+font-size:16px;
+margin-bottom:10px;
+color:#5f675d;
+}
 
-    .button{
-      display:block;
-      width:100%;
-      margin:10px 0;
-      padding:15px;
-      background:linear-gradient(180deg,#a7b89f 0%,#8fa187 100%);
-      color:white;
-      text-decoration:none;
-      font-size:15px;
-      font-weight:bold;
-      border-radius:999px;
-      box-shadow:0 8px 20px rgba(110,130,100,0.25);
-      text-align:center;
-    }
+.location{
+margin-bottom:14px;
+}
 
-    .secondary-button{
-      background:#edf2ea;
-      color:#4e574b;
-      box-shadow:none;
-      border:1px solid #d8e1d3;
-    }
+.badge{
+display:inline-block;
+background:#e9efe6;
+padding:8px 14px;
+border-radius:20px;
+font-size:14px;
+margin-bottom:20px;
+}
 
-    .soon-box{
-      background:#ffffff;
-      border-radius:26px;
-      padding:18px 16px;
-      box-shadow:0 10px 25px rgba(80,100,70,0.06);
-      margin-bottom:16px;
-    }
+.button{
+display:block;
+width:100%;
+padding:16px;
+margin:12px 0;
+background:#8fa187;
+color:white;
+text-decoration:none;
+border-radius:40px;
+font-weight:bold;
+font-size:16px;
+}
 
-    .soon-title{
-      font-size:18px;
-      font-weight:700;
-      color:#2f332f;
-      margin-bottom:8px;
-    }
+.button.secondary{
+background:#e6ebe3;
+color:#4f564d;
+}
 
-    .soon-text{
-      font-size:14px;
-      color:#6e756c;
-      line-height:1.45;
-    }
-  </style>
+.description{
+font-size:15px;
+line-height:1.5;
+color:#5f675d;
+margin-top:16px;
+}
+
+</style>
 </head>
 
 <body>
+
 <div class="page">
+
 <div class="card">
 
-<h1>Събития</h1>
-
-<div class="intro">
-Тук ще откриваш актуалните събития и специални практики на Йога с Азизе.
+<div class="hero">
+<img src="event1.jpg">
 </div>
 
-<div class="event-box">
-<div class="event-label">Актуално събитие</div>
+<div class="content">
 
-<div class="event-title">Миофасциална йога за горната част на тялото</div>
-<div class="event-subtitle">MFR + Yin практика</div>
+<h1>Миофасциална йога</h1>
 
-<div class="event-details">
-<strong>Дата:</strong> 21 март<br>
-<strong>Час:</strong> 12:30 – 14:00<br>
-<strong>Място:</strong> Flow Soul Space – Варна<br>
-<strong>Енергиен обмен:</strong> 12 €
+<div class="subtitle">
+MFR + Yin практика
 </div>
 
-<div class="event-description">
-Практика за освобождаване на напрежението в раменете, врата и горната част на гърба чрез комбинация от миофасциално освобождаване и Yin йога.
+<div class="date">
+21 март
+</div>
+
+<div class="time">
+12:30 – 14:00
+</div>
+
+<div class="location">
+📍 Flow Soul Space – Варна
+</div>
+
+<div class="badge">
+Остават 8 места
 </div>
 
 <a class="button" href="https://forms.gle/BxWqUGx8CQMSdvXC8" target="_blank">
 Запиши се
 </a>
+
+<a class="button secondary" href="https://maps.app.goo.gl/9Yp45ybEqNxVxsiy8">
+Виж локацията
+</a>
+
+<div class="description">
+Практика за освобождаване на напрежението в раменете, врата и горната част на гърба чрез комбинация от миофасциално освобождаване и Yin йога.
 </div>
 
-<div class="soon-box">
-<div class="soon-title">Очаквайте скоро</div>
-<div class="soon-text">
-Следващи специални практики и събития ще бъдат публикувани тук.
-</div>
-</div>
-
-<a class="button secondary-button" href="index.html">
+<a class="button secondary" href="index.html">
 Назад към профила
 </a>
 
 </div>
+
 </div>
+
+</div>
+
 </body>
 </html>
