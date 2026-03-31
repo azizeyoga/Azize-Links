@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Йога с Азизе</title>
+<title>Събития | Йога с Азизе</title>
 
 <style>
 *{
@@ -16,105 +16,260 @@ body{
 margin:0;
 font-family:Arial, sans-serif;
 background:linear-gradient(180deg,#e7eee4 0%,#dfe7da 100%);
+color:#2f2f2f;
+}
+
+.page{
+min-height:100vh;
 display:flex;
 justify-content:center;
-align-items:center;
-min-height:100vh;
+padding:20px;
 }
 
-.container{
+.card{
 width:100%;
-max-width:420px;
+max-width:560px;
 background:#f8faf7;
 border-radius:34px;
-padding:30px 20px;
-text-align:center;
 box-shadow:0 20px 50px rgba(80,100,70,0.15);
-}
-
-.profile-img{
-width:110px;
-height:110px;
-border-radius:50%;
-object-fit:cover;
-border:4px solid #dfe7da;
-margin-bottom:16px;
+padding:30px 22px;
+text-align:center;
 }
 
 h1{
-margin:10px 0 6px;
-font-size:24px;
+margin-top:0;
+margin-bottom:12px;
+font-size:30px;
+}
+
+.intro{
+font-size:16px;
+color:#5f675d;
+margin-bottom:26px;
+}
+
+.section-label{
+font-size:13px;
+letter-spacing:1px;
+font-weight:bold;
+color:#8fa187;
+margin-top:20px;
+margin-bottom:6px;
+}
+
+.event-title{
+font-size:26px;
+font-weight:bold;
+margin-bottom:6px;
 }
 
 .subtitle{
 color:#5f675d;
+margin-bottom:18px;
+}
+
+.date{
+font-size:20px;
+font-weight:bold;
+margin-bottom:6px;
+}
+
+.time{
+font-size:16px;
+color:#5f675d;
+margin-bottom:12px;
+}
+
+.location{
+margin-bottom:14px;
+}
+
+.badge{
+display:inline-block;
+background:#e9efe6;
+padding:8px 14px;
+border-radius:20px;
 font-size:14px;
-margin-bottom:20px;
+margin-bottom:16px;
+}
+
+.countdown{
+font-size:16px;
+margin-bottom:18px;
+color:#5f675d;
 }
 
 .button{
 display:block;
 width:100%;
 padding:16px;
-margin:10px 0;
+margin:12px 0;
 background:#8fa187;
 color:white;
 text-decoration:none;
 border-radius:40px;
 font-weight:bold;
-font-size:15px;
+font-size:16px;
 }
 
 .button.secondary{
 background:#e6ebe3;
 color:#4f564d;
 }
-</style>
 
+.description{
+font-size:15px;
+line-height:1.6;
+color:#5f675d;
+margin-top:20px;
+margin-bottom:26px;
+}
+
+.soon{
+margin-top:30px;
+background:#eef2ec;
+padding:20px;
+border-radius:20px;
+}
+
+.soon h3{
+margin-top:0;
+}
+</style>
 </head>
 
 <body>
 
-<div class="container">
+<div class="page">
+<div class="card">
 
-<img src="profile.jpg" class="profile-img">
+<h1>Събития</h1>
 
-<h1>Йога с Азизе</h1>
-
-<div class="subtitle">
-Hatha · Yin · Soundbath<br>
-Практики за баланс и лекота.
+<div class="intro">
+Тук ще откриваш актуалните събития и специални практики на Йога с Азизе.
 </div>
 
-<a class="button" href="events.html">
-Събития
-</a>
+<div class="section-label">
+АКТУАЛНО СЪБИТИЕ
+</div>
+
+<div class="event-title">
+Благотворителна йога практика
+</div>
+
+<div class="subtitle">
+Мек Hatha–Vinyasa flow · подходяща за всички нива
+</div>
+
+<div class="date">
+4 април
+</div>
+
+<div class="time">
+12:30 ч.
+</div>
+
+<div class="location">
+📍 Flow Soul Space – Варна
+</div>
+
+<div class="badge">
+Енергиен обмен с отворена стойност
+</div>
+
+<div class="countdown" id="countdown">
+Зареждане...
+</div>
 
 <a class="button" href="https://www.supersaas.com/schedule/Flow-Soulspace/grafik" target="_blank">
-Запиши се за следващо събитие
+Запиши се
 </a>
+
+<a class="button secondary" href="https://fb.me/e/i7bQiYRei" target="_blank">
+Виж събитието
+</a>
+
+<div class="description">
+Има моменти, в които можем да направим нещо добро заедно.
+Този път практиката ни има и друга посока.
+
+Каузата е насочена към деца от отдел „Малформации“ в Дом за медико-социални грижи за деца – Варна (кв. Виница).
+
+Практиката ще бъде с мек Hatha–Vinyasa flow, подходяща за всички нива.
+
+Събраните средства ще бъдат насочени към каузата. Мултиспорт карти няма да се използват за това събитие.
+</div>
+
+<div class="section-label">
+СЛЕДВАЩО СЪБИТИЕ
+</div>
+
+<div class="event-title">
+Миофасциална йога
+</div>
 
 <div class="subtitle">
-Записването е отворено за следващите практики.
+Цяло тяло · MFR + Yin
 </div>
 
-<a class="button secondary" href="https://www.facebook.com/share/181vy6Mc3n/" target="_blank">
-Facebook
-</a>
+<div class="date">
+18 април
+</div>
 
-<a class="button secondary" href="https://www.instagram.com/yoga.azize" target="_blank">
-Instagram
-</a>
+<div class="time">
+12:30 ч. · 90 мин практика
+</div>
 
-<a class="button secondary" href="https://invite.viber.com/?g2=AQAFdclileRBfVW7%2FZ9wPyFaTdt%2BKzZdpDyQVsvCp0yamUv6HptSyb%2BxeD4LqFAF" target="_blank">
-Viber
-</a>
+<div class="location">
+📍 Flow Soul Space – Варна
+</div>
 
-<a class="button secondary" href="events.html">
-Всички събития
+<div class="badge">
+Скоро
+</div>
+
+<div class="description">
+Практика за освобождаване на напрежението в цялото тяло чрез комбинация от миофасциално освобождаване и Yin йога.
+
+Повече информация и записване ще бъдат публикувани скоро.
+</div>
+
+<div class="soon">
+<h3>Очаквайте скоро</h3>
+Следващи специални практики и събития ще бъдат публикувани тук.
+</div>
+
+<a class="button secondary" href="index.html">
+Назад към профила
 </a>
 
 </div>
+</div>
+
+<script>
+const eventDate = new Date("2026-04-04T12:30:00+03:00").getTime();
+const countdownEl = document.getElementById("countdown");
+
+function updateCountdown() {
+  const now = new Date().getTime();
+  const distance = eventDate - now;
+
+  if (distance <= 0) {
+    countdownEl.innerHTML = "Събитието започва!";
+    return;
+  }
+
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+  countdownEl.innerHTML =
+    "До събитието остават: " + days + " дни " + hours + " часа " + minutes + " мин.";
+}
+
+updateCountdown();
+setInterval(updateCountdown, 60000);
+</script>
 
 </body>
 </html>
