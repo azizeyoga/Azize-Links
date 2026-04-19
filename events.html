@@ -68,42 +68,11 @@ color:#5f675d;
 margin-bottom:18px;
 }
 
-.date{
-font-size:20px;
-font-weight:bold;
-margin-bottom:6px;
-}
-
-.time{
-font-size:16px;
-color:#5f675d;
-margin-bottom:12px;
-}
-
-.location{
-margin-bottom:14px;
-}
-
-.badge{
-display:inline-block;
-background:#e9efe6;
-padding:8px 14px;
-border-radius:20px;
-font-size:14px;
-margin-bottom:16px;
-}
-
-.countdown{
-font-size:16px;
-margin-bottom:18px;
-color:#5f675d;
-}
-
 .button{
 display:block;
 width:100%;
 padding:16px;
-margin:12px 0;
+margin:14px 0;
 background:#8fa187;
 color:white;
 text-decoration:none;
@@ -117,14 +86,6 @@ background:#e6ebe3;
 color:#4f564d;
 }
 
-.description{
-font-size:15px;
-line-height:1.6;
-color:#5f675d;
-margin-top:20px;
-margin-bottom:26px;
-}
-
 .soon{
 margin-top:30px;
 background:#eef2ec;
@@ -136,6 +97,7 @@ border-radius:20px;
 margin-top:0;
 margin-bottom:10px;
 }
+
 </style>
 </head>
 
@@ -155,71 +117,21 @@ margin-bottom:10px;
 </div>
 
 <div class="event-title">
-Миофасциална йога
+В момента няма активно събитие
 </div>
 
 <div class="subtitle">
-Цяло тяло · MFR + Yin
-</div>
-
-<div class="date">
-18 април
-</div>
-
-<div class="time">
-12:30 ч. · 90 мин практика
-</div>
-
-<div class="location">
-📍 Flow Soul Space – Варна
-</div>
-
-<div class="badge">
-Ранно записване до 12 април – 13 €
-</div>
-
-<div class="countdown" id="countdown">
-Зареждане...
-</div>
-
-<a class="button" href="https://forms.gle/yQLQTi7gjZvrJcp88" target="_blank">
-Запиши се
-</a>
-
-<a class="button secondary" href="https://fb.me/e/clSsSLarn" target="_blank">
-Виж събитието
-</a>
-
-<div class="description">
-Тази практика е насочена към освобождаване на напрежението в цялото тяло чрез комбинация от миофасциално освобождаване (MFR) с терапевтични топки и Yin йога.
-
-Работим бавно и осъзнато, за да дадем време на тъканите да се отпуснат, а нервната система да се регулира.
-
-Местата са ограничени, за да можем да работим спокойно и с внимание към всеки.
-
-Енергиен обмен:
-▸ Ранно записване до 12 април – 13 €  
-▸ Записване от 13 до 17 април – 20 €
-
-Плащането се извършва на място.
-</div>
-
-<div class="section-label">
-СЛЕДВАЩО СЪБИТИЕ
-</div>
-
-<div class="event-title">
-Очаквайте скоро
-</div>
-
-<div class="subtitle">
-Следваща специална практика
+Следващата практика ще бъде обявена скоро 🤍
 </div>
 
 <div class="soon">
-<h3>Нов анонс предстои</h3>
-Следващите специални практики и събития ще бъдат публикувани тук.
+<h3>Искаш ли да не я изпуснеш?</h3>
+Следи страницата и ще разбереш първа за следващото събитие.
 </div>
+
+<a class="button" href="https://www.instagram.com/yoga.azize" target="_blank">
+Последвай в Instagram
+</a>
 
 <a class="button secondary" href="index.html">
 Назад към профила
@@ -227,31 +139,6 @@ margin-bottom:10px;
 
 </div>
 </div>
-
-<script>
-const eventDate = new Date("2026-04-18T12:30:00+03:00").getTime();
-const countdownEl = document.getElementById("countdown");
-
-function updateCountdown() {
-  const now = new Date().getTime();
-  const distance = eventDate - now;
-
-  if (distance <= 0) {
-    countdownEl.innerHTML = "Събитието започва!";
-    return;
-  }
-
-  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-
-  countdownEl.innerHTML =
-    "До събитието остават: " + days + " дни " + hours + " часа " + minutes + " мин.";
-}
-
-updateCountdown();
-setInterval(updateCountdown, 60000);
-</script>
 
 </body>
 </html>
