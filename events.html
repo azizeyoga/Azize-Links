@@ -34,7 +34,11 @@ padding:30px 22px;
 text-align:center;
 }
 
-h1{ margin-top:0; margin-bottom:12px; font-size:30px; }
+h1{
+margin-top:0;
+margin-bottom:12px;
+font-size:30px;
+}
 
 .intro{
 font-size:16px;
@@ -87,12 +91,6 @@ font-size:14px;
 margin-bottom:16px;
 }
 
-.countdown{
-font-size:16px;
-margin-bottom:18px;
-color:#5f675d;
-}
-
 .button{
 display:block;
 width:100%;
@@ -134,35 +132,25 @@ margin-bottom:26px;
 
 <div class="section-label">АКТУАЛНО СЪБИТИЕ</div>
 
-<div class="event-title">Миофасциална йога</div>
-<div class="subtitle">Цяло тяло · MFR + Yin</div>
-<div class="date">16 май</div>
-<div class="time">12:20 ч. · 90 мин практика</div>
-<div class="location">📍 Flow Soul Space – Варна</div>
-<div class="badge">Енергиен обмен – 15 €</div>
+<div class="event-title">Йога на открито</div>
 
-<div class="countdown" id="countdown">Зареждане...</div>
-
-<a class="button" href="https://forms.gle/8RuxtSMgYu9RgdjU9" target="_blank">
-Запиши се
-</a>
-
-<a class="button secondary" href="https://fb.me/e/63Ry2l5ZV" target="_blank">
-Виж събитието
-</a>
-
-<div class="description">
-Практика за освобождаване на напрежението в цялото тяло чрез комбинация от миофасциално освобождаване (MFR) и Yin йога.
+<div class="subtitle">
+Разходка към морето · движение · въздух
 </div>
 
-<div class="section-label">СЛЕДВАЩО СЪБИТИЕ</div>
-
-<div class="event-title">Йога на открито</div>
-<div class="subtitle">Разходка към морето · движение · въздух</div>
 <div class="date">30 май</div>
-<div class="time">около 5–6 часа</div>
-<div class="location">📍 Къщички „Синьо лято“ / Blue Summer</div>
-<div class="badge">Ранно записване до 18 май – 15 €</div>
+
+<div class="time">
+около 5–6 часа
+</div>
+
+<div class="location">
+📍 Къщички „Синьо лято“ / Blue Summer
+</div>
+
+<div class="badge">
+Ранно записване до 18 май – 15 €
+</div>
 
 <div class="description">
 Един ден извън града, с йога практика на открито, лека разходка и време край морето.
@@ -170,7 +158,7 @@ margin-bottom:26px;
 Срещаме се в Къщички „Синьо лято“ / Blue Summer – място между гората и морето.
 </div>
 
-<a class="button" href="https://forms.gle/3AU25AykuMJg7VfeA" target="_blank">
+<a class="button" href="https://forms.gle/4jpH8Qirr4dhD995A" target="_blank">
 Запиши се
 </a>
 
@@ -180,11 +168,25 @@ margin-bottom:26px;
 
 <div class="section-label">СПЕЦИАЛНО СЪБИТИЕ</div>
 
-<div class="event-title">Йога ретрийт с Елара & Азизе</div>
-<div class="subtitle">3 дни за възстановяване и баланс</div>
-<div class="date">5 – 7 юни</div>
-<div class="location">📍 Еко комплекс Здравец</div>
-<div class="badge">Ограничени места</div>
+<div class="event-title">
+Йога ретрийт с Елара & Азизе
+</div>
+
+<div class="subtitle">
+3 дни за възстановяване и баланс
+</div>
+
+<div class="date">
+5 – 7 юни
+</div>
+
+<div class="location">
+📍 Еко комплекс Здравец
+</div>
+
+<div class="badge">
+Ограничени места
+</div>
 
 <div class="description">
 Ретрийт, създаден като преживяване – не просто практики.
@@ -202,31 +204,6 @@ margin-bottom:26px;
 
 </div>
 </div>
-
-<script>
-const eventDate = new Date("2026-05-16T12:20:00+03:00").getTime();
-const countdownEl = document.getElementById("countdown");
-
-function updateCountdown() {
-  const now = new Date().getTime();
-  const distance = eventDate - now;
-
-  if (distance <= 0) {
-    countdownEl.innerHTML = "Събитието започва!";
-    return;
-  }
-
-  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-
-  countdownEl.innerHTML =
-    "До събитието остават: " + days + " дни " + hours + " часа " + minutes + " мин.";
-}
-
-updateCountdown();
-setInterval(updateCountdown, 60000);
-</script>
 
 </body>
 </html>
